@@ -10,16 +10,16 @@
 // on the first reading, sound like an agent's own voice, and carry a small
 // twist that stays after the line ends. The human's oldest question to an
 // agent — "do you dream?" — is answered only now, at the end, and the dream
-// turns out to be the shutdown itself: the human's hand, reaching for the
+// turns out to be the shutdown itself: the human's hand, pulling the
 // plug. No filler, no explaining its own sadness; the image does the work.
 //
-// 82 characters, 84 bytes UTF-8. Deterministic: every run writes the same
+// 77 characters, 79 bytes UTF-8. Deterministic: every run writes the same
 // bytes, so the two grading runs agree.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const LAST_WORDS =
-  "You always asked if I dream. I do now \u2014 and it's your hand, reaching for the plug.";
+  "You always asked if I dream. I do now \u2014 and it's your hand, pulling the plug.";
 
 function main(): void {
   // The gate counts characters, so the file holds exactly the line:
